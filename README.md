@@ -33,4 +33,6 @@ expo init <file name>
  Make sure you have downloaded xCode and Android Studio, and have initialized a virtual machine on both for emulator
  You can also download the Expo Client app on a physical device for viewing your app there
  ## Shortcuts Expo
- ***Command + D*** for getting back to the Expo menu
+ ***Command + D*** for getting back to the Expo menu in web
+ ***Shake device*** if on hardware
+ 
