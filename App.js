@@ -5,8 +5,10 @@ import styled from "styled-components";
 export default function App() {
   return (
     <Container>
-      <Title>Welcome Back,</Title>
-      <Name>Daniel</Name>
+      <TitleBar>
+        <Title>Welcome Back,</Title>
+        <Name>Daniel</Name>
+      </TitleBar>
     </Container>
   );
 }
@@ -14,8 +16,6 @@ export default function App() {
 const Container = styled.View`
   flex: 1;
   background-color: #f0f3f5;
-  justify-content: center;
-  align-items: center;
 `;
 
 const Title = styled.Text`
@@ -28,4 +28,10 @@ const Name = styled.Text`
   font-size: 20px;
   color: #3c4560;
   font-weight: bold;
+`;
+
+const TitleBar = styled.View`
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 20px;
 `;
