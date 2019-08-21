@@ -77,6 +77,7 @@ const Subtitle = styled.Text`
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
+  margin-top: 4px;
 `;
 
 const Wrapper = styled.View`
