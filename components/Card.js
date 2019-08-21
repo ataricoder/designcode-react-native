@@ -7,6 +7,13 @@ const Card = props => (
       <Image source={require("../assets/background2.jpg")}></Image>
       <Title>Styled Components</Title>
     </Cover>
+    <Content>
+      <Logo source={require("../assets/logo-react.png")}></Logo>
+      <Wrapper>
+        <Caption>React Native</Caption>
+        <Subtitle>5 of 12 Sections</Subtitle>
+      </Wrapper>
+    </Content>
   </Container>
 );
 
@@ -45,4 +52,33 @@ const Title = styled.Text`
   margin-left: 20px;
   margin-top: 20px;
   width: 170px;
+`;
+
+const Content = styled.View`
+  padding-left: 20px;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+`;
+
+const Logo = styled.Image`
+  width: 44px;
+  height: 44px;
+`;
+
+const Caption = styled.Text`
+  color: #3c4560;
+  font-size: 20px;
+  font-weight: 600;
+`;
+
+const Subtitle = styled.Text`
+  color: #b8bece;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+`;
+
+const Wrapper = styled.View`
+  margin-left: 10px;
 `;
