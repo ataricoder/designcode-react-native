@@ -6,6 +6,7 @@ export default function App() {
   return (
     <Container>
       <TitleBar>
+        <Avatar source={require("./assets/avatar.jpg")} />
         <Title>Welcome Back,</Title>
         <Name>Daniel</Name>
       </TitleBar>
@@ -33,5 +34,16 @@ const Name = styled.Text`
 const TitleBar = styled.View`
   width: 100%;
   margin-top: 50px;
-  padding-left: 20px;
+  padding-left: 80px;
+`;
+
+const Avatar = styled.Image`
+  width: 44px;
+  height: 44px;
+  background: black;
+  border-radius: 22px;
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
