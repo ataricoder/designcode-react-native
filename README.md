@@ -30,9 +30,16 @@ expo init <file name>
  ```sh
  yarn start
  ```
- Make sure you have downloaded xCode and Android Studio, and have initialized a virtual machine on both for emulator
+ Make sure you have downloaded Xcode and Android Studio, and have initialized a virtual machine on both for emulator
  You can also download the Expo Client app on a physical device for viewing your app there
  ## Shortcuts Expo
  ***Command + D*** for getting back to the Expo menu in web
  ***Shake device*** if on hardware
+ ## Libraries/Frameworks
+>When installing some packages while running the local server, an error might occur. To fix that, stop the instance ```ctrl+c``` , install most recent packages ```npm install```  and finally restart the expo server by ```expo start``` or ```yarn start```
+ 
+- Styled Components
+```npm install -s styled-components```
+- 
+
  
