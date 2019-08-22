@@ -3,6 +3,7 @@ import { ScrollView, SafeAreaView } from "react-native";
 import styled from "styled-components";
 import Card from "./components/Card";
 import { NotificationIcon } from "./components/Icons";
+import Logo from "./components/Logo";
 
 export default function App() {
   return (
@@ -17,6 +18,16 @@ export default function App() {
               style={{ position: "absolute", right: 20, top: 5 }}
             />
           </TitleBar>
+          <ScrollView
+            style={{ flexDirection: "row", padding: 20, paddingLeft: 12 }}
+            horizontal={true}
+          >
+            <Logo
+              image={require("./assets/logo-framerx.png")}
+              text="Framer X"
+            />
+            <Logo image={require("./assets/logo-figma.png")} text="Figma" />
+          </ScrollView>
           <Subtitle>Continue Learning</Subtitle>
           <ScrollView
             horizontal="true"
