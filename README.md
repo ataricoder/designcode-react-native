@@ -63,4 +63,12 @@ You can also download the Expo Client app on a physical device for viewing your 
   `npm install -s styled-components`
 - Ionicons
   https://ionicons.com/
--
+- React Native SVG
+  `npm install react-native-svg`
+- SVG Playground
+  https://www.smooth-code.com/open-source/svgr/playground/
+
+## To Do
+
+- [ ] Ionicons not working, Props and Icons min: 9:25
+- [ ] asdf

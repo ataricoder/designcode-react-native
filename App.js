@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView, SafeAreaView } from "react-native";
 import styled from "styled-components";
 import Card from "./components/Card";
-import { Icon } from "expo";
+import { NotificationIcon } from "./components/Icons";
 
 export default function App() {
   return (
@@ -13,6 +13,9 @@ export default function App() {
             <Avatar source={require("./assets/avatar.jpg")} />
             <Title>Welcome Back,</Title>
             <Name>Daniel</Name>
+            <NotificationIcon
+              style={{ position: "absolute", right: 20, top: 5 }}
+            />
           </TitleBar>
           <Subtitle>Continue Learning</Subtitle>
           <ScrollView
