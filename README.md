@@ -61,4 +61,6 @@ You can also download the Expo Client app on a physical device for viewing your 
 
 - Styled Components
   `npm install -s styled-components`
+- Ionicons
+  https://ionicons.com/
 -
