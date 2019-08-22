@@ -8,7 +8,7 @@ export default function App() {
     <Container>
       <TitleBar>
         <Avatar source={require("./assets/avatar.jpg")} />
-        <Title>Welcome Back,</Title>
+        <Title>Hi Back,</Title>
         <Name>Daniel</Name>
       </TitleBar>
       <Subtitle>Continue Learning</Subtitle>
