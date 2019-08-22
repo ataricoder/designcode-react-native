@@ -19,7 +19,12 @@ export default function App() {
             />
           </TitleBar>
           <ScrollView
-            style={{ flexDirection: "row", padding: 20, paddingLeft: 12 }}
+            style={{
+              flexDirection: "row",
+              padding: 20,
+              paddingLeft: 12,
+              paddingTop: 30
+            }}
             horizontal={true}
           >
             <Logo
@@ -94,6 +99,6 @@ const Subtitle = styled.Text`
   font-weight: 600;
   font-size: 15px;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   text-transform: uppercase;
 `;

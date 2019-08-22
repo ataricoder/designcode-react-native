@@ -71,4 +71,4 @@ You can also download the Expo Client app on a physical device for viewing your 
 ## To Do
 
 - [ ] Ionicons not working, Props and Icons min: 9:25
-- [ ] asdf
+- [x] SVG not working
