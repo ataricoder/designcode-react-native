@@ -12,20 +12,22 @@ export default function App() {
         <Name>Daniel</Name>
       </TitleBar>
       <Subtitle>Continue Learning</Subtitle>
-      <Card
-        title="Styled Components"
-        image={require("./assets/background2.jpg")}
-        caption="React Native"
-        logo={require("./assets/logo-react.png")}
-        subtitle="5 of 12 Sections"
-      />
-      <Card
-        title="Styled Components"
-        image={require("./assets/background2.jpg")}
-        caption="React Native"
-        logo={require("./assets/logo-react.png")}
-        subtitle="5 of 12 Sections"
-      />
+      <ScrollView horizontal="true">
+        <Card
+          title="Styled Components"
+          image={require("./assets/background2.jpg")}
+          caption="React Native"
+          logo={require("./assets/logo-react.png")}
+          subtitle="5 of 12 Sections"
+        />
+        <Card
+          title="Styled Components"
+          image={require("./assets/background2.jpg")}
+          caption="React Native"
+          logo={require("./assets/logo-react.png")}
+          subtitle="5 of 12 Sections"
+        />
+      </ScrollView>
     </Container>
   );
 }
