@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { ScrollView } from "react-native";
 import styled from "styled-components";
 import Card from "./components/Card";
 
@@ -12,7 +12,20 @@ export default function App() {
         <Name>Daniel</Name>
       </TitleBar>
       <Subtitle>Continue Learning</Subtitle>
-      <Card />
+      <Card
+        title="Styled Components"
+        image={require("./assets/background2.jpg")}
+        caption="React Native"
+        logo={require("./assets/logo-react.png")}
+        subtitle="5 of 12 Sections"
+      />
+      <Card
+        title="Styled Components"
+        image={require("./assets/background2.jpg")}
+        caption="React Native"
+        logo={require("./assets/logo-react.png")}
+        subtitle="5 of 12 Sections"
+      />
     </Container>
   );
 }
