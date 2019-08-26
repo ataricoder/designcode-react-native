@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Card from "./components/Card";
 import { NotificationIcon } from "./components/Icons";
 import Logo from "./components/Logo";
+import Course from "./components/Course";
 
 export default function App() {
   return (
@@ -50,6 +51,8 @@ export default function App() {
               />
             ))}
           </ScrollView>
+          <Subtitle>Popular Courses</Subtitle>
+          <Course />
         </ScrollView>
       </SafeAreaView>
     </Container>
