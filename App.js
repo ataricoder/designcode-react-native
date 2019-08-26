@@ -26,12 +26,12 @@ export default function App() {
               paddingTop: 30
             }}
             horizontal={true}
+            showsHorizontalScrollIndicator={false}
           >
-            <Logo
-              image={require("./assets/logo-framerx.png")}
-              text="Framer X"
-            />
-            <Logo image={require("./assets/logo-figma.png")} text="Figma" />
+            {/*Loop that goes through all logos array*/}
+            {logos.map((logo, index) => (
+              <Logo key={index} image={logo.image} text={logo.text} />
+            ))}
           </ScrollView>
           <Subtitle>Continue Learning</Subtitle>
           <ScrollView
@@ -102,3 +102,30 @@ const Subtitle = styled.Text`
   margin-top: 20px;
   text-transform: uppercase;
 `;
+
+const logos = [
+  {
+    image: require("./assets/logo-framerx.png"),
+    text: "Framer X"
+  },
+  {
+    image: require("./assets/logo-figma.png"),
+    text: "Figma"
+  },
+  {
+    image: require("./assets/logo-studio.png"),
+    text: "Studio"
+  },
+  {
+    image: require("./assets/logo-react.png"),
+    text: "React"
+  },
+  {
+    image: require("./assets/logo-swift.png"),
+    text: "Swift"
+  },
+  {
+    image: require("./assets/logo-sketch.png"),
+    text: "Sketch"
+  }
+];
