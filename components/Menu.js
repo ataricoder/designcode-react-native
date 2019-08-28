@@ -24,8 +24,21 @@ class Menu extends React.Component {
   render() {
     return (
       <AnimatedContainer style={{ top: this.state.top }}>
-        <Cover />
-        <TouchableOpacity onPress={this.toggleMenu}>
+        <Cover>
+          <Image source={require("../assets/background2.jpg")} />
+          <Title>Daniel Munoz</Title>
+          <Subtitle>Designer at Design+Code</Subtitle>
+        </Cover>
+        <TouchableOpacity
+          onPress={this.toggleMenu}
+          style={{
+            position: "absolute",
+            top: 120,
+            left: "50%",
+            marginLeft: -22,
+            zIndex: 1
+          }}
+        >
           <CloseView>X</CloseView>
         </TouchableOpacity>
         <Content />
@@ -35,6 +48,24 @@ class Menu extends React.Component {
 }
 
 export default Menu;
+
+const Image = styled.Image`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+`;
+
+const Title = styled.Text`
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+`;
+
+const Subtitle = styled.Text`
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 8px;
+`;
 
 const Container = styled.View`
   position: absolute;
@@ -53,11 +84,16 @@ const CloseView = styled.Text`
   background: white;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 36px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 `;
 
 const Cover = styled.View`
   height: 142px;
   background: black;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Content = styled.View`
