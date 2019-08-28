@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Animated, TouchableOpacity, Dimensions } from "react-native";
+import MenuItem from "./MenuItem";
 
 const screenHeight = Dimensions.get("window").height;
 
@@ -41,7 +42,17 @@ class Menu extends React.Component {
         >
           <CloseView>X</CloseView>
         </TouchableOpacity>
-        <Content />
+        <Content>
+          {items.map((item, index) => (
+            <MenuItem
+              key={index}
+              iconview={item.iconview}
+              title={item.title}
+              text={item.text}
+            />
+          ))}
+          <MenuItem />
+        </Content>
       </AnimatedContainer>
     );
   }
@@ -99,4 +110,28 @@ const Cover = styled.View`
 const Content = styled.View`
   height: ${screenHeight};
   background: #f0f3f5;
+  padding: 50px;
 `;
+
+const items = [
+  {
+    iconview: "AC",
+    title: "Account",
+    text: "settings"
+  },
+  {
+    iconview: "BI",
+    title: "Billing",
+    text: "payments"
+  },
+  {
+    iconview: "LR",
+    title: "Learn React",
+    text: "start course"
+  },
+  {
+    iconview: "LO",
+    title: "Log out",
+    text: "see you soon!"
+  }
+];
