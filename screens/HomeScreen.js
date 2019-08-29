@@ -4,7 +4,8 @@ import {
   SafeAreaView,
   TouchableOpacity,
   Animated,
-  Easing
+  Easing,
+  StatusBar
 } from "react-native";
 import styled from "styled-components";
 import Card from "../components/Card";
@@ -33,6 +34,10 @@ class HomeScreen extends React.Component {
     opacity: new Animated.Value(1)
   };
 
+  componentDidMount() {
+    StatusBar.setBarStyle("dark-content", true);
+  }
+
   componentDidUpdate() {
     this.toggleMenu();
   }
@@ -47,6 +52,8 @@ class HomeScreen extends React.Component {
       Animated.spring(this.state.opacity, {
         toValue: 0.5
       }).start();
+
+      StatusBar.setBarStyle("light-content", true);
     }
 
     if (this.props.action == "closeMenu") {
@@ -58,6 +65,8 @@ class HomeScreen extends React.Component {
       Animated.spring(this.state.opacity, {
         toValue: 1
       }).start();
+
+      StatusBar.setBarStyle("dark-content", true);
     }
   };
 
