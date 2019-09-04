@@ -79,3 +79,5 @@ You can also download the Expo Client app on a physical device for viewing your 
   `npm install react-native-reanimated`
 - React-Navigation-Stack
   `npm install react-navigation-stack`
+- React-Navigation-Tabs
+  `npm install react-navigation-tabs`
