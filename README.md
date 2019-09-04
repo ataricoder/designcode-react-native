@@ -73,3 +73,9 @@ You can also download the Expo Client app on a physical device for viewing your 
   `npm install --save react-redux`
 - React-Navigation
   `npm install --save react-navigation`
+- React-Native-Gesture-Handler
+  `npm install react-native-gesture-handler`
+- React-Native-Reanimated
+  `npm install react-native-reanimated`
+- React-Navigation-Stack
+  `npm install react-navigation-stack`
