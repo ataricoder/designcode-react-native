@@ -71,3 +71,5 @@ You can also download the Expo Client app on a physical device for viewing your 
   `npm install --save redux`
 - React-Redux
   `npm install --save react-redux`
+- React-Navigation
+  `npm install --save react-navigation`
