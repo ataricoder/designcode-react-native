@@ -81,3 +81,8 @@ You can also download the Expo Client app on a physical device for viewing your 
   `npm install react-navigation-stack`
 - React-Navigation-Tabs
   `npm install react-navigation-tabs`
+
+## To Note
+
+I couldnt get the Ionicons to work, might have to survive with another library or local svg icons
+Look at Screens and Navigation at min 18
