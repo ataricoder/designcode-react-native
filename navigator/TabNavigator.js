@@ -4,6 +4,8 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "../screens/HomeScreen";
 import SectionScreen from "../screens/SectionScreen";
+import CoursesScreen from "../screens/CoursesScreen";
+import ProjectsScreen from "../screens/ProjectsScreen";
 
 const HomeStack = createStackNavigator(
   {
@@ -30,7 +32,7 @@ HomeStack.navigationOptions = ({ navigation }) => {
 };
 
 const CoursesStack = createStackNavigator({
-  Courses: SectionScreen
+  Courses: CoursesScreen
 });
 
 CoursesStack.navigationOptions = {
@@ -38,7 +40,7 @@ CoursesStack.navigationOptions = {
 };
 
 const ProjectsStack = createStackNavigator({
-  Projects: SectionScreen
+  Projects: ProjectsScreen
 });
 
 ProjectsStack.navigationOptions = {
