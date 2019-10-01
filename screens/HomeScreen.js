@@ -125,7 +125,9 @@ class HomeScreen extends React.Component {
                   <TouchableOpacity
                     key={index}
                     onPress={() => {
-                      this.props.navigation.push("Section");
+                      this.props.navigation.push("Section", {
+                        section: card
+                      });
                     }}
                   >
                     <Card
@@ -241,7 +243,7 @@ const cards = [
     logo: require("../assets/logo-react.png")
   },
   {
-    title: "Style Components",
+    title: "Styled Components",
     image: require("../assets/background12.jpg"),
     subtitle: "React Native",
     caption: "2 of 12 sections",
