@@ -5,7 +5,8 @@ import {
   TouchableOpacity,
   Animated,
   Easing,
-  StatusBar
+  StatusBar,
+  Platform
 } from "react-native";
 import styled from "styled-components";
 import Card from "../components/Card";
@@ -77,6 +78,8 @@ class HomeScreen extends React.Component {
 
   componentDidMount() {
     StatusBar.setBarStyle("dark-content", true);
+
+    if (Platform.OS == "android") StatusBar.setBarStyle("light-content", true);
   }
 
   componentDidUpdate() {
@@ -191,18 +194,20 @@ class HomeScreen extends React.Component {
                 </Query>
               </ScrollView>
               <Subtitle>Popular Courses</Subtitle>
-              {courses.map((course, index) => (
-                <Course
-                  key={index}
-                  image={course.image}
-                  title={course.title}
-                  subtitle={course.subtitle}
-                  logo={course.logo}
-                  author={course.author}
-                  avatar={course.avatar}
-                  caption={course.caption}
-                />
-              ))}
+              <CoursesContainer>
+                {courses.map((course, index) => (
+                  <Course
+                    key={index}
+                    image={course.image}
+                    title={course.title}
+                    subtitle={course.subtitle}
+                    logo={course.logo}
+                    author={course.author}
+                    avatar={course.avatar}
+                    caption={course.caption}
+                  />
+                ))}
+              </CoursesContainer>
             </ScrollView>
           </SafeAreaView>
         </AnimatedContainer>
@@ -216,8 +221,15 @@ export default connect(
   mapDispatchToProps
 )(HomeScreen);
 
+const CoursesContainer = styled.View`
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10px;
+`;
+
 const CardsContainer = styled.View`
   flex-direction: row;
+  padding-left: 10px;
 `;
 
 const Message = styled.Text`
