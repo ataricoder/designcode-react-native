@@ -81,8 +81,20 @@ You can also download the Expo Client app on a physical device for viewing your 
   `npm install react-navigation-stack`
 - React-Navigation-Tabs
   `npm install react-navigation-tabs`
+- Apollo and GraphQl
+  `npm install apollo-boost react-apollo graphql --save`
+- React Native Showdown
+  `npm install --save react-native-showdown`
 
 ## To Note
 
 I couldnt get the Ionicons to work, might have to survive with another library or local svg icons
-Look at Screens and Navigation at min 18
+Look at Screens and Navigation at min 18.
+
+Make sure to have the latest Expo CLI in order for app to run correctly, found some issues when simulator was opening but expo app was not.
+
+Run `npm install` or `yarn install` after adding libraries before starting local development server.
+
+Could not integrate WebView, it is no longer in the React-Native core package. Whole session of HTML and Markdown. Uninstalled.
+
+Could not integrate Showdown. Still installed.
