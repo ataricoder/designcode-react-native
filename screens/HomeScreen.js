@@ -214,7 +214,9 @@ export default connect(
   mapDispatchToProps
 )(HomeScreen);
 
-const CardsContainer = styled.View``;
+const CardsContainer = styled.View`
+  flex-direction: row;
+`;
 
 const Message = styled.Text`
   margin: 20px;
