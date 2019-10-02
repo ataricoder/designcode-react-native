@@ -98,3 +98,9 @@ Run `npm install` or `yarn install` after adding libraries before starting local
 Could not integrate WebView, it is no longer in the React-Native core package. Whole session of HTML and Markdown. Uninstalled.
 
 Could not integrate Showdown. Still installed.
+
+## Could Not
+
+- [ ] No {course.image} on Android. Data is loaded from Contentful, but image is not appearing. HomeScreen.js, Card.js, SectionScreen.js.
+- [ ] No markdown on iOS. The library react-native-showdown might be the causant for the issue. HomeScreen.js, SectionScreen.js.
+- [x] Ionicons is built into React Native core library, so there is no need to import it. Syntax is a little different from what the course says.
